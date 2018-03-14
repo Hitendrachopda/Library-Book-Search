@@ -67,7 +67,7 @@
 			$localized_data['book_max_price']	= $book_max_price;
 			
 			// Localize the script with new data
-			wp_localize_script( $this->plugin_name, 'lbsVar', $localized_data);
+			wp_localize_script( $this->plugin_name, 'libVar', $localized_data);
 		}
 		
 		// function to get maximum book price value
