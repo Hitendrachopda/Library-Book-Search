@@ -2,14 +2,14 @@
 jQuery(document).ready(function(){
 	
 	// make sure that our jquery executes only when particular class of our plugin exist
-	if( jQuery('.lib-search-form #lbs_btn_submit').length > 0 )
+	if( jQuery('.lib-search-form #lib_btn_submit').length > 0 )
 	{
 		// ajax function to load all the books during page load
 		// here argument defines that we will show records only for first page
 		search_books(1);
 		
 		// when user clicks on "search" button, call ajax function again
-		jQuery('.lib-search-form #lbs_btn_submit').click(function(e){
+		jQuery('.lib-search-form #lib_btn_submit').click(function(e){
 			search_books(1);
 			e.preventDefault();
 		});
@@ -18,8 +18,8 @@ jQuery(document).ready(function(){
 		jQuery( "#slider-range" ).slider({
 			  range: true,
 			  min: 1,
-			  max: lbsVar.book_max_price,
-			  values: [ 1, lbsVar.book_max_price ],
+			  max: libVar.book_max_price,
+			  values: [ 1, libVar.book_max_price ],
 			  slide: function( event, ui ) {
 				jQuery( "#amount" ).html( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
 				jQuery( "#book_min_price" ).val(ui.values[ 0 ]);
@@ -47,7 +47,7 @@ function search_books(navigation_Page)
 	var book_search_data = jQuery('#lib_frm_search').serialize();
 	jQuery.ajax({
 				type 	: 'POST',
-				url      : lbsVar.ajax_url,
+				url      : libVar.ajax_url,
 				dataType :"json",
 				data: {
 					action: 'lib_search_book',
