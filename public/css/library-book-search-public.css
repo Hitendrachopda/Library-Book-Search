@@ -1,0 +1,20 @@
+/** main style of Library Book Search plugin **/
+
+.lib-search-form h2 {text-align:center;}
+.lib-list-books .pagination1 ul li {list-style:none;display:inline-block;}
+.lib-list-books .pagination1 ul li span.current {color: #0000ff;}
+.lib-search-form #lib_frm_search {display: inline-block; width: 100%;}
+.lib-search-form,.lib-list-books{padding: 20px;border: 1px solid #000;margin-bottom: 20px;}
+.lib-search-form #lib_frm_search{margin-bottom: 20px;}
+.lib-search-form .left-part {float: left; width: 50%; padding-right: 15px;}
+.lib-search-form .right-part {width: 50%;float: left; padding-left: 15px;}
+.lib-search-form .form-group{margin-bottom: 10px;}
+.lib-search-form .form-group select,.lib-search-form .form-group .form-control{width: 100%;}
+.lib-search-form .pagination1 ul li{border: 1px solid #333;}
+.lib-search-form .lib_btn_wrapper{display: inline-block;width: 100%;text-align: center;}
+.lib-list-books table tr td a,
+.lib-list-books table tr td a:hover{box-shadow:none;color: #0000ff;}
+.lib-book-detail a.lib-author-link,
+.lib-book-detail a.lib-publisher-link {color: #0000ff;}
+span.fill-star {color: #f6a809;font-size: 26px;}
+span.blank-star {font-size: 22px;}
