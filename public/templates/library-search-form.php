@@ -7,7 +7,7 @@
 <?php $book_max_price = $this->lib_book_max_price(); ?>
 	<div class="lib-search-form">
 		<h2><?php echo __('Book Search','lib-book-search');?></h2>
-		<form id="lib_frm_search" name="lbs_frm_search" method="post">
+		<form id="lib_frm_search" name="lib_frm_search" method="post">
 			<div class="left-part">
 				<div class="form-row">
 					<div class="form-group">
@@ -60,7 +60,7 @@
 				</div>
 			</div>
 			<div class="lib_btn_wrapper">
-				<input type="submit" class="btn btn-default" id="lbs_btn_submit" value="<?php echo __('Search','lib-book-search');?>">
+				<input type="submit" class="btn btn-default" id="lib_btn_submit" value="<?php echo __('Search','lib-book-search');?>">
 			</div>
 		</form>
 	</div>
